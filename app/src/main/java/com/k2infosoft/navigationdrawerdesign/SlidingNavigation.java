@@ -35,7 +35,10 @@ import com.k2infosoft.navigationdrawerdesign.fragment.SettingsFragment;
 import com.k2infosoft.navigationdrawerdesign.other.CircleTransform;
 import com.k2infosoft.navigationdrawerdesign.utils.IntentUtils;
 
-
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class SlidingNavigation extends AppCompatActivity {
     private NavigationView navigationView;
     private DrawerLayout drawer;

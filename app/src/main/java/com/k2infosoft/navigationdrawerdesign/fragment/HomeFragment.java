@@ -19,6 +19,11 @@ import com.k2infosoft.navigationdrawerdesign.R;
  * Use the {@link HomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class HomeFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

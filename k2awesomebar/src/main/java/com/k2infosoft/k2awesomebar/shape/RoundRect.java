@@ -1,8 +1,9 @@
 package com.k2infosoft.k2awesomebar.shape;
 
-/**
- * Created by florentchampigny on 29/01/2017.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 
 
 import android.graphics.Canvas;

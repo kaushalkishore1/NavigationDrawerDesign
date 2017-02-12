@@ -17,9 +17,10 @@ import android.widget.TextView;
 import com.k2infosoft.k2awesomebar.shape.RoundRect;
 
 
-/**
- * Created by florentchampigny on 30/01/2017.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 
 public class ActionItem extends LinearLayout {
 

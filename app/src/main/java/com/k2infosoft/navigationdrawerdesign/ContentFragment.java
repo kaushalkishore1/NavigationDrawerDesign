@@ -13,9 +13,10 @@ import android.widget.ImageView;
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 
 
-/**
- * Created by Konstantin on 22.12.2014.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class ContentFragment extends Fragment implements ScreenShotable {
     public static final String CLOSE = "Close";
     public static final String BUILDING = "Building";

@@ -41,7 +41,10 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.mikepenz.octicons_typeface_library.Octicons;
-
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class MiniDrawerActivity extends AppCompatActivity {
     private static final int PROFILE_SETTING = 1;
 

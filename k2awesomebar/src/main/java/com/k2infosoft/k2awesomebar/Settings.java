@@ -5,9 +5,10 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 
-/**
- * Created by florentchampigny on 30/01/2017.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 
 public class Settings {
 

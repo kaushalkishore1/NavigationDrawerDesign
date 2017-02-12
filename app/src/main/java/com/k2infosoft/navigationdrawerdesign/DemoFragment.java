@@ -10,9 +10,10 @@ import android.view.ViewGroup;
 
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class DemoFragment extends Fragment implements ScreenShotable {
     private View containerView;
     private Bitmap bitmap;

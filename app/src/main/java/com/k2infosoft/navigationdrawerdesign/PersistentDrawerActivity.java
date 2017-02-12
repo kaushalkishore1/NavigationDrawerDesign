@@ -27,7 +27,10 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SectionDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import com.mikepenz.materialize.util.UIUtils;
-
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class PersistentDrawerActivity extends AppCompatActivity {
     private static final int PROFILE_SETTING = 1;
 

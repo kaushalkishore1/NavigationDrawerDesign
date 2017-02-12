@@ -36,6 +36,10 @@ import java.util.List;
  * Auto adds all other 3 types.
  * Very beta stage yet!
  */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class MovingViewAnimator {
 
     //movement type vars

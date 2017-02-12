@@ -20,9 +20,10 @@ import android.view.MotionEvent;
 import android.view.animation.LinearInterpolator;
 import android.widget.TextView;
 
-/**
- * Created by Spark on 2016/7/13 10:53.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class SubmitButton extends TextView {
     private static final String TAG = "SubmitButton";
     private float mRadius;

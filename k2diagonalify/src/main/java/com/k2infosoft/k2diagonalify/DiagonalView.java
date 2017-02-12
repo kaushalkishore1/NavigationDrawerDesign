@@ -16,6 +16,10 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.widget.ImageView;
 
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class DiagonalView extends ImageView {
 
     Context mContext;
@@ -87,7 +91,7 @@ public class DiagonalView extends ImageView {
         if (styledAttributes.hasValue(R.styleable.DiagonalView_diagonalGravity)) {
             diagonalGravity = styledAttributes.getInt(R.styleable.DiagonalView_diagonalGravity, 0);
         }
-        if  (styledAttributes.hasValue(R.styleable.DiagonalView_horizontalShift)) {
+        if (styledAttributes.hasValue(R.styleable.DiagonalView_horizontalShift)) {
             shift = (int) styledAttributes.getDimension(R.styleable.DiagonalView_horizontalShift, 0);
         }
 

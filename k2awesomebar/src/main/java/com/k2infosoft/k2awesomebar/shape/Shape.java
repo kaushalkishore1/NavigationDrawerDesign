@@ -4,9 +4,10 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 
-/**
- * Created by florentchampigny on 29/01/2017.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 
 public abstract class Shape {
     private int color = Color.argb(0, 0, 0, 0);

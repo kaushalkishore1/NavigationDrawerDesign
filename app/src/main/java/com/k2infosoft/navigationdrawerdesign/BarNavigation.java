@@ -14,6 +14,10 @@ import com.k2infosoft.k2awesomebar.AwesomeBar;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class BarNavigation extends AppCompatActivity {
 
     @Bind(R.id.bar)

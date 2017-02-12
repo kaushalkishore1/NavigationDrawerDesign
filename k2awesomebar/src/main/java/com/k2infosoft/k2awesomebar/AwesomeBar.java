@@ -22,9 +22,10 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-/**
- * Created by florentchampigny on 29/01/2017.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 
 public class AwesomeBar extends FrameLayout {
 

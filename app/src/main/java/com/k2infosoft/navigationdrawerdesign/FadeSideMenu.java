@@ -34,7 +34,10 @@ import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.mikepenz.materialdrawer.util.DrawerUIUtils;
 import com.mikepenz.materialize.util.UIUtils;
-
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class FadeSideMenu extends AppCompatActivity {
     //save our header or result
     private AccountHeader headerResult = null;

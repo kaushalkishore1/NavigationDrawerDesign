@@ -3,9 +3,10 @@ package com.k2infosoft.navigationdrawerdesign.utils;
 import com.mikepenz.crossfader.Crossfader;
 import com.mikepenz.materialdrawer.interfaces.ICrossfader;
 
-/**
- * Created by mikepenz on 18.07.15.
- */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class CrossfadeWrapper implements ICrossfader {
     private Crossfader mCrossfader;
 

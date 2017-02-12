@@ -2,7 +2,7 @@ package com.k2infosoft.navigationdrawerdesign.utils;
 
 /*
 * @author:kaushal kishore
-* Created on:07:02:2017
+* Created on:12:02:2017
 */
 
 import android.content.Context;

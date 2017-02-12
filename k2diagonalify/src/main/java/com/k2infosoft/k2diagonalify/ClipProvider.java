@@ -1,7 +1,10 @@
 package com.k2infosoft.k2diagonalify;
 
 import android.graphics.Path;
-
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class ClipProvider {
 
     private static float SHADOW_CORRECTION = 10;

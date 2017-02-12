@@ -26,6 +26,10 @@ import yalantis.com.sidemenu.interfaces.ScreenShotable;
 import yalantis.com.sidemenu.model.SlideMenuItem;
 import yalantis.com.sidemenu.util.ViewAnimator;
 
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class SideMenu extends AppCompatActivity implements ViewAnimator.ViewAnimatorListener {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;

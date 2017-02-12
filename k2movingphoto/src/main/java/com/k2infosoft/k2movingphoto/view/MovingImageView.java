@@ -33,6 +33,10 @@ import com.k2infosoft.k2movingphoto.animation.MovingViewAnimator;
  * Custom ImageView for moving images around the screen. Uses <code>MovingObjectAnimator</code>
  * for animation effects.
  */
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class MovingImageView extends ImageView {
 
     //control vars

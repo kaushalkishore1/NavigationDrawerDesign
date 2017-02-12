@@ -16,7 +16,10 @@ import android.view.MenuItem;
 
 import com.k2infosoft.navigationdrawerdesign.utils.IntentUtils;
 import com.mikepenz.materialdrawer.MiniDrawer;
-
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

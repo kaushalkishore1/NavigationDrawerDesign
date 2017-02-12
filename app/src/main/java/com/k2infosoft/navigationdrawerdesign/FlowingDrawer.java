@@ -10,7 +10,10 @@ import android.util.Log;
 import android.view.View;
 
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
-
+/*
+* @author:kaushal kishore
+* Created on:12:02:2017
+*/
 public class FlowingDrawer extends AppCompatActivity {
     private RecyclerView rvFeed;
     private com.mxn.soul.flowingdrawer_core.FlowingDrawer mDrawer;
