@@ -33,6 +33,7 @@ import com.k2infosoft.navigationdrawerdesign.fragment.NotificationsFragment;
 import com.k2infosoft.navigationdrawerdesign.fragment.PhotosFragment;
 import com.k2infosoft.navigationdrawerdesign.fragment.SettingsFragment;
 import com.k2infosoft.navigationdrawerdesign.other.CircleTransform;
+import com.k2infosoft.navigationdrawerdesign.utils.IntentUtils;
 
 
 public class SlidingNavigation extends AppCompatActivity {
@@ -403,6 +404,14 @@ public class SlidingNavigation extends AppCompatActivity {
         // and selected 'Mark all as Read'
         if (id == R.id.action_mark_all_read) {
             Toast.makeText(getApplicationContext(), "All notifications marked as read!", Toast.LENGTH_LONG).show();
+        }
+
+        if (id == R.id.action_about) {
+            IntentUtils.openUrl(this, "https://github.com/kaushalkishore1/TabDesigns");
+        }
+
+        if (id == R.id.action_about_me) {
+            IntentUtils.openUrl(this, "https://in.linkedin.com/in/kaushal-kishore-96910758");
         }
 
         // user is in notifications fragment

@@ -35,13 +35,17 @@ dependencies {
     compile 'com.android.support:design:25.1.1'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile project(':k2diagonalify')
-    compile project(':k2awesomebar')
-    compile project(':k2movingphoto')
+    //compile project(':k2awesomebar')
+    //compile project(':k2movingphoto')
+    compile(name: 'k2awesomebar', ext: 'aar')
     compile(name: 'k2sidemenu', ext: 'aar')
     compile(name: 'flowingdrawer', ext: 'aar')
+    compile(name: 'k2awesomesubmit', ext: 'aar')
+    //compile(name: 'k2diagonalify', ext: 'aar')
+    compile(name: 'k2movingphoto', ext: 'aar')
     compile 'com.github.rubensousa:raiflatbutton:0.1'
     compile project(':k2materialdrawer')
-    compile project(':k2awesomesubmit')
+    //compile project(':k2awesomesubmit')
     //compile(name: 'k2materialdrawer', ext: 'aar')
     compile 'com.jakewharton:butterknife:7.0.0'
     compile 'com.github.florent37:diagonallayout:1.0.2'

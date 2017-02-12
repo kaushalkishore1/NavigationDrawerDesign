@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.LinearLayout;
 
+import com.k2infosoft.navigationdrawerdesign.utils.IntentUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -140,11 +142,17 @@ public class SideMenu extends AppCompatActivity implements ViewAnimator.ViewAnim
             return true;
         }
         switch (item.getItemId()) {
+            case R.id.action_about:
+                IntentUtils.openUrl(this, "https://github.com/kaushalkishore1/TabDesigns");
+                break;
+            case R.id.action_about_me:
+                IntentUtils.openUrl(this, "https://in.linkedin.com/in/kaushal-kishore-96910758");
+                break;
             case R.id.action_settings:
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+                break;
         }
+
+        return super.onOptionsItemSelected(item);
     }
 
    /* private ScreenShotable replaceFragment(ScreenShotable screenShotable, int topPosition) {

@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.k2infosoft.navigationdrawerdesign.utils.IntentUtils;
 import com.mikepenz.materialdrawer.MiniDrawer;
 
 public class MainActivity extends AppCompatActivity
@@ -144,8 +145,15 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_about:
+                IntentUtils.openUrl(this, "https://github.com/kaushalkishore1/TabDesigns");
+                break;
+            case R.id.action_about_me:
+                IntentUtils.openUrl(this, "https://in.linkedin.com/in/kaushal-kishore-96910758");
+                break;
+            case R.id.action_settings:
+                break;
         }
 
         return super.onOptionsItemSelected(item);

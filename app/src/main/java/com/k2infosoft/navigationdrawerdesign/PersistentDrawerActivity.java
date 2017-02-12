@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 
 import com.k2infosoft.navigationdrawerdesign.utils.CrossfadeWrapper;
+import com.k2infosoft.navigationdrawerdesign.utils.IntentUtils;
 import com.mikepenz.crossfader.Crossfader;
 import com.mikepenz.fontawesome_typeface_library.FontAwesome;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
@@ -147,13 +148,19 @@ public class PersistentDrawerActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         //handle the click on the back arrow click
         switch (item.getItemId()) {
+            case R.id.action_about:
+                IntentUtils.openUrl(this, "https://github.com/kaushalkishore1/TabDesigns");
+                break;
+            case R.id.action_about_me:
+                IntentUtils.openUrl(this, "https://in.linkedin.com/in/kaushal-kishore-96910758");
+                break;
+            case R.id.action_settings:
+                break;
             case android.R.id.home:
                 onBackPressed();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+                break;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
