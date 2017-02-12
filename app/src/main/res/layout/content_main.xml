@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.k2infosoft.navigationdrawerdesign.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Black_20"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <com.k2infosoft.k2movingphoto.view.MovingImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:clickable="true"
+                android:onClick="clickImage"
+                android:src="@drawable/kaushal"
+                app:miv_load_on_create="true"
+                app:miv_max_relative_size="3.0"
+                app:miv_min_relative_offset="0.2"
+                app:miv_repetitions="-1"
+                app:miv_speed="100"
+                app:miv_start_delay="1000" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:id="@+id/hsv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/normalButton_cust"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:text="Custom Navigation" />
+
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/normalButton_mini"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:text="Mini Drawer" />
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/normalButton_side"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:text="Side Menu" />
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/normalButton_bar"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:text="Awesome Bar" />
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/normalButton_sliding"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:text="Sliding Menu" />
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/normalButton_flowing"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:text="Flowing Drawer" />
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/normalButton_fade"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:text="Fade Menu Drawer" />
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/normalButton_persistent"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:text="Persistent Drawer" />
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.k2infosoft.k2awesomesubmit.SubmitButton
+                android:id="@+id/custom_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Navigation Grid Drawer"
+                android:textColor="@color/White_95"
+                android:textSize="13sp"
+                app:sub_btn_background="@color/custom_rating_color"
+                app:sub_btn_duration="2000"
+                app:sub_btn_line_color="@color/colorPrimary"
+                app:sub_btn_ripple_color="@color/colorPrimary"
+                app:sub_btn_tick_color="@color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

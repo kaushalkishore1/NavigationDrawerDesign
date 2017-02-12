@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.k2infosoft.navigationdrawerdesign">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomNavigation"
+            android:label="@string/title_activity_custom_navigation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".NavGridMenu"
+            android:label="@string/title_activity_custom_navigation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SideMenu"
+            android:label="@string/title_activity_custom_navigation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BarNavigation"
+            android:label="@string/title_activity_custom_navigation"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".FlowingDrawer"
+            android:label="@string/title_activity_custom_navigation"
+            android:theme="@style/MyTheme"></activity>
+
+        <activity
+            android:name=".SlidingNavigation"
+            android:label="@string/title_activity_custom_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="AboutUsActivity"
+            android:label="@string/activity_title_about_us" />
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:label="@string/activity_title_privacy_policy" />
+        <activity
+            android:name=".FadeSideMenu"
+            android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
+        <activity
+            android:name=".PersistentDrawerActivity"
+            android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
+        <activity
+            android:name=".MiniDrawerActivity"
+            android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
+    </application>
+
+</manifest>

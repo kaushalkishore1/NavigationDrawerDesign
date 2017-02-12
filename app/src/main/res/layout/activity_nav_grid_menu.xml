@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_nav_grid_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:overScrollMode="always">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:weightSum="14">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@drawable/background" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/background"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="-100dp">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/kaushal"
+                            android:layout_marginBottom="45dp"
+                            app:civ_border_color="@color/semiTransparentWhite"
+                            app:civ_border_width="10dp" />
+
+                        <!--android:layout_marginBottom="45dp"-->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginStart="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Kaushal Kishore"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp" />
+
+                            <!-- <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:fontFamily="sans-serif-light"
+                                 android:text="musician, singer, songwriter"
+                                 android:textSize="14sp" />-->
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".8"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:id="@+id/ripple_cause"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/ic_home_black_24dp1"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Home"
+                                    android:textColor="@color/White_95"
+                                    android:textSize="16sp" />
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/strut_1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/Teal_7"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/ic_settings_applications_black_24dp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Setting"
+                                    android:textColor="@color/White_95"
+                                    android:textSize="16sp" />
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/strut_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#c0c0c0" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:paddingLeft="20dp"
+                        android:text="Payments"
+                        android:textSize="18sp"
+                        android:typeface="serif" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <io.codetail.widget.RevealLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.balysv.materialripple.MaterialRippleLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:mrl_rippleAlpha="0.1"
+                                    app:mrl_rippleColor="@color/Teal_7"
+                                    app:mrl_rippleHover="true"
+                                    app:mrl_rippleOverlay="true">
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/colorPrimary"
+                                        android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
+                                        android:padding="10dp"
+                                        android:text="Send Money"
+                                        android:textColor="@color/White_95" />
+                                </com.balysv.materialripple.MaterialRippleLayout>
+                            </io.codetail.widget.RevealLinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <io.codetail.widget.RevealLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.balysv.materialripple.MaterialRippleLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:mrl_rippleAlpha="0.1"
+                                    app:mrl_rippleColor="@color/Teal_7"
+                                    app:mrl_rippleHover="true"
+                                    app:mrl_rippleOverlay="true">
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/colorPrimary"
+                                        android:drawableLeft="@drawable/ic_stay_current_portrait_black_24dp"
+                                        android:padding="10dp"
+                                        android:text="Mobile Recharge"
+                                        android:textColor="@color/White_95" />
+                                </com.balysv.materialripple.MaterialRippleLayout>
+                            </io.codetail.widget.RevealLinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/icn_5"
+                                    android:padding="10dp"
+                                    android:text="Shops"
+                                    android:textColor="@color/White_95" />
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/icn_7"
+                                    android:padding="10dp"
+                                    android:text="Movies"
+                                    android:textColor="@color/White_95" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/strut_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:paddingLeft="20dp"
+                        android:text="Savings"
+                        android:textSize="18sp"
+                        android:typeface="serif" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/strut_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/icn_2"
+                                    android:padding="10dp"
+                                    android:text="Books"
+                                    android:textColor="@color/White_95" />
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/icn_4"
+                                    android:padding="10dp"
+                                    android:text="Deposit"
+                                    android:textColor="@color/White_95" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/icn_5"
+                                    android:padding="10dp"
+                                    android:text="Shopping"
+                                    android:textColor="@color/White_95" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/strut_6"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/icn_6"
+                                    android:padding="10dp"
+                                    android:text="party"
+                                    android:textColor="@color/White_95" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/ic_help_black_24dp"
+                                    android:gravity="center"
+                                    android:paddingLeft="20dp"
+                                    android:text="FAQ"
+                                    android:textColor="@color/White_95"
+                                    android:textSize="16sp" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:mrl_rippleAlpha="0.1"
+                                app:mrl_rippleColor="@color/colorPrimary"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleOverlay="true">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:drawableLeft="@drawable/ic_cancel_black_24dp"
+                                    android:gravity="center"
+                                    android:paddingLeft="20dp"
+                                    android:text="Logout"
+                                    android:textColor="@color/White_95"
+                                    android:textSize="16sp" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#c0c0c0" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

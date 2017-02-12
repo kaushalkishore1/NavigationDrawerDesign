@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.k2infosoft.navigationdrawerdesign"
+        minSdkVersion 22
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile project(':k2diagonalify')
+    compile project(':k2awesomebar')
+    compile project(':k2movingphoto')
+    compile(name: 'k2sidemenu', ext: 'aar')
+    compile(name: 'flowingdrawer', ext: 'aar')
+    compile 'com.github.rubensousa:raiflatbutton:0.1'
+    compile project(':k2materialdrawer')
+    compile project(':k2awesomesubmit')
+    //compile(name: 'k2materialdrawer', ext: 'aar')
+    compile 'com.jakewharton:butterknife:7.0.0'
+    compile 'com.github.florent37:diagonallayout:1.0.2'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+
+
+    /**/
+    compile 'com.github.medyo:fancybuttons:1.8.3'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.ozodrukh:CircularReveal:1.0.4'
+    compile 'com.github.michaldrabik:tapbarmenu:1.0.5'
+
+    /*material drawer*/
+    // used to showcase how to load images
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    // the sample uses more advanced functions of the fastadapter
+    // https://github.com/mikepenz/FastAdapter/
+    compile 'com.mikepenz:fastadapter-commons:2.1.0@aar'
+    // used to generate the Open Source section
+    // https://github.com/mikepenz/AboutLibraries
+    compile('com.mikepenz:aboutlibraries:5.9.0@aar') {
+        transitive = true
+        exclude module: "fastadapter"
+    }
+    //used to provide different itemAnimators for the RecyclerView
+    //https://github.com/mikepenz/ItemAnimators
+    compile 'com.mikepenz:itemanimators:0.5.0@aar'
+    // used to provide the MiniDrawer to normal Drawer crossfade effect via a SlidingPane layout
+    // --> https://github.com/mikepenz/MaterialDrawer/blob/develop/app/src/main/java/com/mikepenz/materialdrawer/app/MiniDrawerActivity.java
+    // https://github.com/mikepenz/Crossfader
+    compile 'com.mikepenz:crossfader:1.5.0@aar'
+    // used to provide the two step crossfade DrawerLayout. Which allows to have a mini layout which transforms to a normal layout within the drawer
+    // --> https://github.com/mikepenz/MaterialDrawer/blob/develop/app/src/main/java/com/mikepenz/materialdrawer/app/CrossfadeDrawerLayoutActvitiy.java
+    // https://github.com/mikepenz/CrossfadeDrawerLayout
+    compile('com.mikepenz:crossfadedrawerlayout:1.0.0@aar')
+    // icon fonts used inside the sample
+    // https://github.com/mikepenz/Android-Iconics
+    compile 'com.mikepenz:google-material-typeface:2.2.0.1@aar'
+    compile 'com.mikepenz:fontawesome-typeface:4.6.0.3@aar'
+    compile 'com.mikepenz:octicons-typeface:3.0.0.1@aar'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    testCompile 'junit:junit:4.12'
+}

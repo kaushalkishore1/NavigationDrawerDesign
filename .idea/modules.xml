@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NavigationDrawerDesign.iml" filepath="$PROJECT_DIR$/NavigationDrawerDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k2awesomebar/k2awesomebar.iml" filepath="$PROJECT_DIR$/k2awesomebar/k2awesomebar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k2awesomesubmit/k2awesomesubmit.iml" filepath="$PROJECT_DIR$/k2awesomesubmit/k2awesomesubmit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k2diagonalify/k2diagonalify.iml" filepath="$PROJECT_DIR$/k2diagonalify/k2diagonalify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k2materialdrawer/k2materialdrawer.iml" filepath="$PROJECT_DIR$/k2materialdrawer/k2materialdrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k2movingphoto/k2movingphoto.iml" filepath="$PROJECT_DIR$/k2movingphoto/k2movingphoto.iml" />
+    </modules>
+  </component>
+</project>
